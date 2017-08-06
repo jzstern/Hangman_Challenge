@@ -1,0 +1,11 @@
+{
+  "name": "Stern_Hangman_Challenge",
+  "version": "0.0.1",
+  "dependencies": {
+    "angular": "^1.6.5",
+    "body-parser": "^1.17.2",
+    "bootstrap": "^4.0.0-alpha.6",
+    "express": "^3.21.2",
+    "node.js": "0.0.0"
+  }
+}
