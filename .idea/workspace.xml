@@ -1,9 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="08e80260-817d-4560-a13a-11a92dd02226" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/hangman.controller.client.js" afterPath="$PROJECT_DIR$/public/hangman.controller.client.js" />
-    </list>
+    <list default="true" id="08e80260-817d-4560-a13a-11a92dd02226" name="Default" comment="" />
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
     <ignored path="$PROJECT_DIR$/tmp/" />
@@ -370,12 +368,12 @@
       <updated>1501865879553</updated>
       <workItem from="1501865880774" duration="1717000" />
       <workItem from="1501867753034" duration="32424000" />
-      <workItem from="1502033991470" duration="19219000" />
+      <workItem from="1502033991470" duration="19603000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="53360000" />
+    <option name="totallyTimeSpent" value="53744000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
