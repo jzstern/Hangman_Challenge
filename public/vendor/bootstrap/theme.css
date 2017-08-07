@@ -27,6 +27,8 @@ body {
 
 .btn-primary {
     max-width: 800px;
+    width: 30%;
+    margin: 0 auto;
 }
 
 p {
