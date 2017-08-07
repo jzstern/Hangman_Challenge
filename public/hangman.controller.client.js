@@ -3,7 +3,7 @@
   .module("HangmanApp", [])
   .controller('HangmanController', HangmanController);
 
-  function HangmanController() {
+  function HangmanController(HangmanService) {
     var model = this;
 
     model.message = "Click New Game to begin";
@@ -304,6 +304,7 @@
         model.guess = "z";
       }
 
+      HangmanService.updateGuess(model.guess);
       // console.log("model.guess is: " + model.guess);
       updateWord();
     }
