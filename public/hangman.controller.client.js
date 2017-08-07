@@ -3,9 +3,10 @@
   .module("HangmanApp", [])
   .controller('HangmanController', HangmanController);
 
-  function HangmanController() {
+  function HangmanController($http) {
     var model = this;
 
+    // TODO ; move data & functions from client side (except for information displayed on the screen) to server
     model.message = "Click New Game to begin";
     model.wordArray =
       ['enterprise', 'platform', 'interesting', 'telephone', 'paradise', 'measurement', 'interface',
@@ -54,6 +55,7 @@
           if (model.theWord.indexOf(model.guess) > -1) {
             var s = model.currentWordState;
 
+            // update the currentWordState filling in the letter where appropriate
             for (var i = 0; i < model.theWord.length; i++) {
               var c = model.theWord.charAt(i);
 
@@ -82,7 +84,7 @@
         }
       }
 
-      // update w/ jquery
+      // update browser w/ jquery
       renderText();
     }
 
@@ -217,9 +219,17 @@
       renderHangman();
       pickWord();
       initBlanks();
-      model.message = "New Game Started (" + model.theWord + ")";
-
+      model.message = "New Game Started";
       renderText();
+
+
+      // TODO ; figure out why this isn't finding it (404)
+      // return $http
+      // .get('/newGame')
+      // .then(function (response) {
+      //   console.log(response.data);
+      //   // TODO ; refresh screen w/ new game data
+      // });
     }
 
     function gameWon() {
@@ -303,9 +313,17 @@
       } else if (code == 90) {
         model.guess = "z";
       }
-
-      // HangmanService.updateGuess(model.guess);
       // console.log("model.guess is: " + model.guess);
+
+      // TODO ; figure out why this is a 'bad request' (500)
+      // return $http
+      // .post('/checkLetter', model.guess)
+      // .then(function (response) {
+      //   return response.data;
+      //   console.log(response.data);
+      //   // TODO ; refresh screen w/ updated game data
+      // });
+
       updateWord();
     }
   }
