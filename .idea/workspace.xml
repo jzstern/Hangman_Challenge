@@ -1,7 +1,133 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="08e80260-817d-4560-a13a-11a92dd02226" name="Default" comment="" />
+    <list default="true" id="08e80260-817d-4560-a13a-11a92dd02226" name="Default" comment="">
+      <change type="MOVED" beforePath="$PROJECT_DIR$/node_modules/jquery/AUTHORS.txt" afterPath="$PROJECT_DIR$/public/vendor/jquery/AUTHORS.txt" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/node_modules/jquery/LICENSE.txt" afterPath="$PROJECT_DIR$/public/vendor/jquery/LICENSE.txt" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/node_modules/jquery/README.md" afterPath="$PROJECT_DIR$/public/vendor/jquery/README.md" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/node_modules/jquery/bower.json" afterPath="$PROJECT_DIR$/public/vendor/jquery/bower.json" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/node_modules/jquery/dist/core.js" afterPath="$PROJECT_DIR$/public/vendor/jquery/src/core.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/node_modules/jquery/dist/jquery.js" afterPath="$PROJECT_DIR$/public/vendor/jquery/dist/jquery.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/node_modules/jquery/dist/jquery.min.js" afterPath="$PROJECT_DIR$/public/vendor/jquery/dist/jquery.min.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/node_modules/jquery/dist/jquery.min.map" afterPath="$PROJECT_DIR$/public/vendor/jquery/dist/jquery.min.map" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/node_modules/jquery/dist/jquery.slim.js" afterPath="$PROJECT_DIR$/public/vendor/jquery/dist/jquery.slim.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/node_modules/jquery/dist/jquery.slim.min.js" afterPath="$PROJECT_DIR$/public/vendor/jquery/dist/jquery.slim.min.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/node_modules/jquery/dist/jquery.slim.min.map" afterPath="$PROJECT_DIR$/public/vendor/jquery/dist/jquery.slim.min.map" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/node_modules/jquery/external/sizzle/LICENSE.txt" afterPath="$PROJECT_DIR$/public/vendor/jquery/external/sizzle/LICENSE.txt" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/node_modules/jquery/external/sizzle/dist/sizzle.js" afterPath="$PROJECT_DIR$/public/vendor/jquery/external/sizzle/dist/sizzle.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/node_modules/jquery/external/sizzle/dist/sizzle.min.js" afterPath="$PROJECT_DIR$/public/vendor/jquery/external/sizzle/dist/sizzle.min.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/node_modules/jquery/external/sizzle/dist/sizzle.min.map" afterPath="$PROJECT_DIR$/public/vendor/jquery/external/sizzle/dist/sizzle.min.map" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/node_modules/jquery/package.json" afterPath="$PROJECT_DIR$/public/vendor/jquery/package.json" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/node_modules/jquery/src/.eslintrc.json" afterPath="$PROJECT_DIR$/public/vendor/jquery/src/.eslintrc.json" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/node_modules/jquery/src/ajax.js" afterPath="$PROJECT_DIR$/public/vendor/jquery/src/ajax.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/node_modules/jquery/src/ajax/jsonp.js" afterPath="$PROJECT_DIR$/public/vendor/jquery/src/ajax/jsonp.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/node_modules/jquery/src/ajax/load.js" afterPath="$PROJECT_DIR$/public/vendor/jquery/src/ajax/load.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/node_modules/jquery/src/ajax/parseXML.js" afterPath="$PROJECT_DIR$/public/vendor/jquery/src/ajax/parseXML.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/node_modules/jquery/src/ajax/script.js" afterPath="$PROJECT_DIR$/public/vendor/jquery/src/ajax/script.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/node_modules/jquery/src/ajax/var/location.js" afterPath="$PROJECT_DIR$/public/vendor/jquery/src/ajax/var/location.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/node_modules/jquery/src/ajax/var/nonce.js" afterPath="$PROJECT_DIR$/public/vendor/jquery/src/ajax/var/nonce.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/node_modules/jquery/src/ajax/var/rquery.js" afterPath="$PROJECT_DIR$/public/vendor/jquery/src/ajax/var/rquery.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/node_modules/jquery/src/ajax/xhr.js" afterPath="$PROJECT_DIR$/public/vendor/jquery/src/ajax/xhr.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/node_modules/jquery/src/attributes.js" afterPath="$PROJECT_DIR$/public/vendor/jquery/src/attributes.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/node_modules/jquery/src/attributes/attr.js" afterPath="$PROJECT_DIR$/public/vendor/jquery/src/attributes/attr.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/node_modules/jquery/src/attributes/classes.js" afterPath="$PROJECT_DIR$/public/vendor/jquery/src/attributes/classes.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/node_modules/jquery/src/attributes/prop.js" afterPath="$PROJECT_DIR$/public/vendor/jquery/src/attributes/prop.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/node_modules/jquery/src/attributes/support.js" afterPath="$PROJECT_DIR$/public/vendor/jquery/src/attributes/support.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/node_modules/jquery/src/attributes/val.js" afterPath="$PROJECT_DIR$/public/vendor/jquery/src/attributes/val.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/node_modules/jquery/src/callbacks.js" afterPath="$PROJECT_DIR$/public/vendor/jquery/src/callbacks.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/node_modules/jquery/src/core.js" afterPath="$PROJECT_DIR$/public/vendor/jquery/dist/core.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/node_modules/jquery/src/core/DOMEval.js" afterPath="$PROJECT_DIR$/public/vendor/jquery/src/core/DOMEval.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/node_modules/jquery/src/core/access.js" afterPath="$PROJECT_DIR$/public/vendor/jquery/src/core/access.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/node_modules/jquery/src/core/init.js" afterPath="$PROJECT_DIR$/public/vendor/jquery/src/core/init.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/node_modules/jquery/src/core/nodeName.js" afterPath="$PROJECT_DIR$/public/vendor/jquery/src/core/nodeName.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/node_modules/jquery/src/core/parseHTML.js" afterPath="$PROJECT_DIR$/public/vendor/jquery/src/core/parseHTML.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/node_modules/jquery/src/core/ready-no-deferred.js" afterPath="$PROJECT_DIR$/public/vendor/jquery/src/core/ready-no-deferred.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/node_modules/jquery/src/core/ready.js" afterPath="$PROJECT_DIR$/public/vendor/jquery/src/core/ready.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/node_modules/jquery/src/core/readyException.js" afterPath="$PROJECT_DIR$/public/vendor/jquery/src/core/readyException.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/node_modules/jquery/src/core/stripAndCollapse.js" afterPath="$PROJECT_DIR$/public/vendor/jquery/src/core/stripAndCollapse.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/node_modules/jquery/src/core/support.js" afterPath="$PROJECT_DIR$/public/vendor/jquery/src/core/support.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/node_modules/jquery/src/core/var/rsingleTag.js" afterPath="$PROJECT_DIR$/public/vendor/jquery/src/core/var/rsingleTag.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/node_modules/jquery/src/css.js" afterPath="$PROJECT_DIR$/public/vendor/jquery/src/css.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/node_modules/jquery/src/css/addGetHookIf.js" afterPath="$PROJECT_DIR$/public/vendor/jquery/src/css/addGetHookIf.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/node_modules/jquery/src/css/adjustCSS.js" afterPath="$PROJECT_DIR$/public/vendor/jquery/src/css/adjustCSS.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/node_modules/jquery/src/css/curCSS.js" afterPath="$PROJECT_DIR$/public/vendor/jquery/src/css/curCSS.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/node_modules/jquery/src/css/hiddenVisibleSelectors.js" afterPath="$PROJECT_DIR$/public/vendor/jquery/src/css/hiddenVisibleSelectors.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/node_modules/jquery/src/css/showHide.js" afterPath="$PROJECT_DIR$/public/vendor/jquery/src/css/showHide.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/node_modules/jquery/src/css/support.js" afterPath="$PROJECT_DIR$/public/vendor/jquery/src/css/support.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/node_modules/jquery/src/css/var/cssExpand.js" afterPath="$PROJECT_DIR$/public/vendor/jquery/src/css/var/cssExpand.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/node_modules/jquery/src/css/var/getStyles.js" afterPath="$PROJECT_DIR$/public/vendor/jquery/src/css/var/getStyles.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/node_modules/jquery/src/css/var/isHiddenWithinTree.js" afterPath="$PROJECT_DIR$/public/vendor/jquery/src/css/var/isHiddenWithinTree.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/node_modules/jquery/src/css/var/rmargin.js" afterPath="$PROJECT_DIR$/public/vendor/jquery/src/css/var/rmargin.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/node_modules/jquery/src/css/var/rnumnonpx.js" afterPath="$PROJECT_DIR$/public/vendor/jquery/src/css/var/rnumnonpx.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/node_modules/jquery/src/css/var/swap.js" afterPath="$PROJECT_DIR$/public/vendor/jquery/src/css/var/swap.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/node_modules/jquery/src/data.js" afterPath="$PROJECT_DIR$/public/vendor/jquery/src/data.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/node_modules/jquery/src/data/Data.js" afterPath="$PROJECT_DIR$/public/vendor/jquery/src/data/Data.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/node_modules/jquery/src/data/var/acceptData.js" afterPath="$PROJECT_DIR$/public/vendor/jquery/src/data/var/acceptData.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/node_modules/jquery/src/data/var/dataPriv.js" afterPath="$PROJECT_DIR$/public/vendor/jquery/src/data/var/dataPriv.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/node_modules/jquery/src/data/var/dataUser.js" afterPath="$PROJECT_DIR$/public/vendor/jquery/src/data/var/dataUser.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/node_modules/jquery/src/deferred.js" afterPath="$PROJECT_DIR$/public/vendor/jquery/src/deferred.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/node_modules/jquery/src/deferred/exceptionHook.js" afterPath="$PROJECT_DIR$/public/vendor/jquery/src/deferred/exceptionHook.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/node_modules/jquery/src/deprecated.js" afterPath="$PROJECT_DIR$/public/vendor/jquery/src/deprecated.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/node_modules/jquery/src/dimensions.js" afterPath="$PROJECT_DIR$/public/vendor/jquery/src/dimensions.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/node_modules/jquery/src/effects.js" afterPath="$PROJECT_DIR$/public/vendor/jquery/src/effects.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/node_modules/jquery/src/effects/Tween.js" afterPath="$PROJECT_DIR$/public/vendor/jquery/src/effects/Tween.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/node_modules/jquery/src/effects/animatedSelector.js" afterPath="$PROJECT_DIR$/public/vendor/jquery/src/effects/animatedSelector.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/node_modules/jquery/src/event.js" afterPath="$PROJECT_DIR$/public/vendor/jquery/src/event.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/node_modules/jquery/src/event/ajax.js" afterPath="$PROJECT_DIR$/public/vendor/jquery/src/event/ajax.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/node_modules/jquery/src/event/alias.js" afterPath="$PROJECT_DIR$/public/vendor/jquery/src/event/alias.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/node_modules/jquery/src/event/focusin.js" afterPath="$PROJECT_DIR$/public/vendor/jquery/src/event/focusin.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/node_modules/jquery/src/event/support.js" afterPath="$PROJECT_DIR$/public/vendor/jquery/src/event/support.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/node_modules/jquery/src/event/trigger.js" afterPath="$PROJECT_DIR$/public/vendor/jquery/src/event/trigger.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/node_modules/jquery/src/exports/amd.js" afterPath="$PROJECT_DIR$/public/vendor/jquery/src/exports/amd.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/node_modules/jquery/src/exports/global.js" afterPath="$PROJECT_DIR$/public/vendor/jquery/src/exports/global.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/node_modules/jquery/src/jquery.js" afterPath="$PROJECT_DIR$/public/vendor/jquery/src/jquery.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/node_modules/jquery/src/manipulation.js" afterPath="$PROJECT_DIR$/public/vendor/jquery/src/manipulation.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/node_modules/jquery/src/manipulation/_evalUrl.js" afterPath="$PROJECT_DIR$/public/vendor/jquery/src/manipulation/_evalUrl.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/node_modules/jquery/src/manipulation/buildFragment.js" afterPath="$PROJECT_DIR$/public/vendor/jquery/src/manipulation/buildFragment.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/node_modules/jquery/src/manipulation/getAll.js" afterPath="$PROJECT_DIR$/public/vendor/jquery/src/manipulation/getAll.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/node_modules/jquery/src/manipulation/setGlobalEval.js" afterPath="$PROJECT_DIR$/public/vendor/jquery/src/manipulation/setGlobalEval.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/node_modules/jquery/src/manipulation/support.js" afterPath="$PROJECT_DIR$/public/vendor/jquery/src/manipulation/support.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/node_modules/jquery/src/manipulation/var/rcheckableType.js" afterPath="$PROJECT_DIR$/public/vendor/jquery/src/manipulation/var/rcheckableType.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/node_modules/jquery/src/manipulation/var/rscriptType.js" afterPath="$PROJECT_DIR$/public/vendor/jquery/src/manipulation/var/rscriptType.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/node_modules/jquery/src/manipulation/var/rtagName.js" afterPath="$PROJECT_DIR$/public/vendor/jquery/src/manipulation/var/rtagName.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/node_modules/jquery/src/manipulation/wrapMap.js" afterPath="$PROJECT_DIR$/public/vendor/jquery/src/manipulation/wrapMap.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/node_modules/jquery/src/offset.js" afterPath="$PROJECT_DIR$/public/vendor/jquery/src/offset.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/node_modules/jquery/src/queue.js" afterPath="$PROJECT_DIR$/public/vendor/jquery/src/queue.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/node_modules/jquery/src/queue/delay.js" afterPath="$PROJECT_DIR$/public/vendor/jquery/src/queue/delay.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/node_modules/jquery/src/selector-native.js" afterPath="$PROJECT_DIR$/public/vendor/jquery/src/selector-native.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/node_modules/jquery/src/selector-sizzle.js" afterPath="$PROJECT_DIR$/public/vendor/jquery/src/selector-sizzle.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/node_modules/jquery/src/selector.js" afterPath="$PROJECT_DIR$/public/vendor/jquery/src/selector.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/node_modules/jquery/src/serialize.js" afterPath="$PROJECT_DIR$/public/vendor/jquery/src/serialize.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/node_modules/jquery/src/traversing.js" afterPath="$PROJECT_DIR$/public/vendor/jquery/src/traversing.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/node_modules/jquery/src/traversing/findFilter.js" afterPath="$PROJECT_DIR$/public/vendor/jquery/src/traversing/findFilter.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/node_modules/jquery/src/traversing/var/dir.js" afterPath="$PROJECT_DIR$/public/vendor/jquery/src/traversing/var/dir.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/node_modules/jquery/src/traversing/var/rneedsContext.js" afterPath="$PROJECT_DIR$/public/vendor/jquery/src/traversing/var/rneedsContext.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/node_modules/jquery/src/traversing/var/siblings.js" afterPath="$PROJECT_DIR$/public/vendor/jquery/src/traversing/var/siblings.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/node_modules/jquery/src/var/ObjectFunctionString.js" afterPath="$PROJECT_DIR$/public/vendor/jquery/src/var/ObjectFunctionString.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/node_modules/jquery/src/var/arr.js" afterPath="$PROJECT_DIR$/public/vendor/jquery/src/var/arr.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/node_modules/jquery/src/var/class2type.js" afterPath="$PROJECT_DIR$/public/vendor/jquery/src/var/class2type.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/node_modules/jquery/src/var/concat.js" afterPath="$PROJECT_DIR$/public/vendor/jquery/src/var/concat.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/node_modules/jquery/src/var/document.js" afterPath="$PROJECT_DIR$/public/vendor/jquery/src/var/document.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/node_modules/jquery/src/var/documentElement.js" afterPath="$PROJECT_DIR$/public/vendor/jquery/src/var/documentElement.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/node_modules/jquery/src/var/fnToString.js" afterPath="$PROJECT_DIR$/public/vendor/jquery/src/var/fnToString.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/node_modules/jquery/src/var/getProto.js" afterPath="$PROJECT_DIR$/public/vendor/jquery/src/var/getProto.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/node_modules/jquery/src/var/hasOwn.js" afterPath="$PROJECT_DIR$/public/vendor/jquery/src/var/hasOwn.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/node_modules/jquery/src/var/indexOf.js" afterPath="$PROJECT_DIR$/public/vendor/jquery/src/var/indexOf.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/node_modules/jquery/src/var/pnum.js" afterPath="$PROJECT_DIR$/public/vendor/jquery/src/var/pnum.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/node_modules/jquery/src/var/push.js" afterPath="$PROJECT_DIR$/public/vendor/jquery/src/var/push.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/node_modules/jquery/src/var/rcssNum.js" afterPath="$PROJECT_DIR$/public/vendor/jquery/src/var/rcssNum.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/node_modules/jquery/src/var/rnothtmlwhite.js" afterPath="$PROJECT_DIR$/public/vendor/jquery/src/var/rnothtmlwhite.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/node_modules/jquery/src/var/slice.js" afterPath="$PROJECT_DIR$/public/vendor/jquery/src/var/slice.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/node_modules/jquery/src/var/support.js" afterPath="$PROJECT_DIR$/public/vendor/jquery/src/var/support.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/node_modules/jquery/src/var/toString.js" afterPath="$PROJECT_DIR$/public/vendor/jquery/src/var/toString.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/node_modules/jquery/src/wrap.js" afterPath="$PROJECT_DIR$/public/vendor/jquery/src/wrap.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/package.json" afterPath="$PROJECT_DIR$/package.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/app.js" afterPath="$PROJECT_DIR$/public/app.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/hangman.controller.client.js" afterPath="$PROJECT_DIR$/public/hangman.controller.client.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/index.html" afterPath="$PROJECT_DIR$/public/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/hangman.service.server.js" afterPath="$PROJECT_DIR$/server/hangman.service.server.js" />
+    </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
     <ignored path="$PROJECT_DIR$/tmp/" />
@@ -18,9 +144,22 @@
       <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/public/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="77">
-              <caret line="33" column="0" lean-forward="true" selection-start-line="33" selection-start-column="0" selection-end-line="33" selection-end-column="0" />
+            <state relative-caret-position="377">
+              <caret line="52" column="28" lean-forward="false" selection-start-line="52" selection-start-column="28" selection-end-line="52" selection-end-column="28" />
               <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="hangman.controller.client.js" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/public/hangman.controller.client.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="278">
+              <caret line="222" column="19" lean-forward="false" selection-start-line="222" selection-start-column="19" selection-end-line="222" selection-end-column="19" />
+              <folding>
+                <element signature="e#2906#5820#0" expanded="false" />
+                <element signature="e#6805#8412#0" expanded="false" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -28,30 +167,18 @@
       <file leaf-file-name="hangman.service.client.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/public/hangman.service.client.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="195">
-              <caret line="13" column="4" lean-forward="false" selection-start-line="13" selection-start-column="4" selection-end-line="13" selection-end-column="4" />
+            <state relative-caret-position="0">
+              <caret line="0" column="14" lean-forward="false" selection-start-line="0" selection-start-column="14" selection-end-line="0" selection-end-column="14" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="hangman.controller.client.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/public/hangman.controller.client.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="820">
-              <caret line="72" column="7" lean-forward="true" selection-start-line="41" selection-start-column="0" selection-end-line="72" selection-end-column="7" />
-              <folding>
-                <element signature="e#5991#7645#0" expanded="false" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="app.js" pinned="false" current-in-tab="true">
+      <file leaf-file-name="app.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/public/app.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="55">
-              <caret line="5" column="0" lean-forward="true" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
+            <state relative-caret-position="1020">
+              <caret line="68" column="4" lean-forward="false" selection-start-line="5" selection-start-column="2" selection-end-line="68" selection-end-column="4" />
               <folding />
             </state>
           </provider>
@@ -60,8 +187,8 @@
       <file leaf-file-name="hangman.service.server.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/server/hangman.service.server.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="194">
-              <caret line="13" column="0" lean-forward="true" selection-start-line="13" selection-start-column="0" selection-end-line="13" selection-end-column="0" />
+            <state relative-caret-position="120">
+              <caret line="8" column="1" lean-forward="false" selection-start-line="8" selection-start-column="1" selection-end-line="8" selection-end-column="1" />
               <folding />
             </state>
           </provider>
@@ -70,8 +197,8 @@
       <file leaf-file-name="hangman.model.server.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/server/hangman.model.server.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="60">
-              <caret line="4" column="27" lean-forward="true" selection-start-line="4" selection-start-column="27" selection-end-line="4" selection-end-column="27" />
+            <state relative-caret-position="75">
+              <caret line="5" column="7" lean-forward="false" selection-start-line="5" selection-start-column="7" selection-end-line="5" selection-end-column="7" />
               <folding>
                 <element signature="n#!!block;n#renderHangman#0" expanded="false" />
                 <element signature="n#!!block;n#getKeyPressed#0" expanded="false" />
@@ -107,18 +234,29 @@
       <find>upn</find>
       <find>$scope</find>
       <find>model</find>
-      <find>key</find>
       <find>model.guess</find>
+      <find>hangmancontrol</find>
+      <find>HangmanController</find>
+      <find>HangmanCon</find>
+      <find>=</find>
+      <find>gameisover</find>
+      <find>key</find>
+      <find>textinput</find>
+      <find>textInput</find>
     </findStrings>
     <replaceStrings>
       <replace>$scope</replace>
       <replace>100</replace>
       <replace>key ==</replace>
-      <replace>==</replace>
       <replace>hangmanModel</replace>
       <replace>code</replace>
       <replace>key</replace>
+      <replace>==</replace>
+      <replace>model.guess</replace>
     </replaceStrings>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
@@ -131,10 +269,10 @@
         <option value="$PROJECT_DIR$/server.js" />
         <option value="$PROJECT_DIR$/public/vendor/bootstrap/theme.css" />
         <option value="$PROJECT_DIR$/server/hangman.model.server.js" />
-        <option value="$PROJECT_DIR$/server/hangman.service.server.js" />
         <option value="$PROJECT_DIR$/public/hangman.service.client.js" />
-        <option value="$PROJECT_DIR$/public/index.html" />
+        <option value="$PROJECT_DIR$/server/hangman.service.server.js" />
         <option value="$PROJECT_DIR$/public/app.js" />
+        <option value="$PROJECT_DIR$/public/index.html" />
         <option value="$PROJECT_DIR$/public/hangman.controller.client.js" />
       </list>
     </option>
@@ -153,6 +291,7 @@
     <option name="width" value="1440" />
     <option name="height" value="873" />
   </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
     <navigator currentView="ProjectPane" proportions="" version="1">
       <flattenPackages />
@@ -222,6 +361,9 @@
     <property name="restartRequiresConfirmation" value="false" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/public/vendor" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/public/vendor" />
       <recent name="$PROJECT_DIR$/public/vendor/bootstrap" />
@@ -351,12 +493,12 @@
       <updated>1501865879553</updated>
       <workItem from="1501865880774" duration="1717000" />
       <workItem from="1501867753034" duration="32424000" />
-      <workItem from="1502033991470" duration="6027000" />
+      <workItem from="1502033991470" duration="15553000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="40168000" />
+    <option name="totallyTimeSpent" value="49694000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -374,8 +516,8 @@
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24947146" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3290653" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3290653" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3290653" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3290653" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -433,7 +575,8 @@
         <state relative-caret-position="2655">
           <caret line="177" column="22" lean-forward="true" selection-start-line="177" selection-start-column="22" selection-end-line="177" selection-end-column="22" />
           <folding>
-            <element signature="e#5991#7645#0" expanded="false" />
+            <element signature="e#2906#5820#0" expanded="false" />
+            <element signature="e#6805#8412#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -527,6 +670,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -560,17 +704,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/server/hangman.model.server.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="4" column="27" lean-forward="true" selection-start-line="4" selection-start-column="27" selection-end-line="4" selection-end-column="27" />
-          <folding>
-            <element signature="n#!!block;n#renderHangman#0" expanded="false" />
-            <element signature="n#!!block;n#getKeyPressed#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/server.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -579,45 +712,75 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/public/hangman.service.client.js">
+    <entry file="file://$PROJECT_DIR$/server/hangman.model.server.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="195">
-          <caret line="13" column="4" lean-forward="false" selection-start-line="13" selection-start-column="4" selection-end-line="13" selection-end-column="4" />
-          <folding />
+        <state relative-caret-position="75">
+          <caret line="5" column="7" lean-forward="false" selection-start-line="5" selection-start-column="7" selection-end-line="5" selection-end-column="7" />
+          <folding>
+            <element signature="n#!!block;n#renderHangman#0" expanded="false" />
+            <element signature="n#!!block;n#getKeyPressed#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/server/hangman.service.server.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="194">
-          <caret line="13" column="0" lean-forward="true" selection-start-line="13" selection-start-column="0" selection-end-line="13" selection-end-column="0" />
+        <state relative-caret-position="120">
+          <caret line="8" column="1" lean-forward="false" selection-start-line="8" selection-start-column="1" selection-end-line="8" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/app.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1020">
+          <caret line="68" column="4" lean-forward="false" selection-start-line="5" selection-start-column="2" selection-end-line="68" selection-end-column="4" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/hangman.service.client.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="14" lean-forward="false" selection-start-line="0" selection-start-column="14" selection-end-line="0" selection-end-column="14" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/vendor/jquery/dist/core.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="n#!!doc" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/vendor/jquery/dist/jquery.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="7" column="44" lean-forward="true" selection-start-line="7" selection-start-column="44" selection-end-line="7" selection-end-column="44" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/public/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="77">
-          <caret line="33" column="0" lean-forward="true" selection-start-line="33" selection-start-column="0" selection-end-line="33" selection-end-column="0" />
+        <state relative-caret-position="377">
+          <caret line="52" column="28" lean-forward="false" selection-start-line="52" selection-start-column="28" selection-end-line="52" selection-end-column="28" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/public/hangman.controller.client.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="820">
-          <caret line="72" column="7" lean-forward="true" selection-start-line="41" selection-start-column="0" selection-end-line="72" selection-end-column="7" />
+        <state relative-caret-position="278">
+          <caret line="222" column="19" lean-forward="false" selection-start-line="222" selection-start-column="19" selection-end-line="222" selection-end-column="19" />
           <folding>
-            <element signature="e#5991#7645#0" expanded="false" />
+            <element signature="e#2906#5820#0" expanded="false" />
+            <element signature="e#6805#8412#0" expanded="false" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/app.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="55">
-          <caret line="5" column="0" lean-forward="true" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>

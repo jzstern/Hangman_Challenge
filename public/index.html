@@ -4,22 +4,14 @@
 <head>
     <meta charset="UTF-8">
     <title>Hangman Challenge</title>
+    <script src="vendor/jquery/dist/jquery.js"></script>
     <script src="vendor/angular/angular.js"></script>
-    <!--<script src="jquery.js"></script>-->
+    <script src="app.js"></script>
     <script src="hangman.controller.client.js"></script>
 
-    <!--<link href="../styles.css" rel="stylesheet" type="text/css"/>-->
     <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
     <link href="vendor/bootstrap/css/bootstrap-theme.min.css" rel="stylesheet">
     <link href="vendor/bootstrap/theme.css" rel="stylesheet">
-
-    <!--<script src="vendor/angular/angular.min.js"></script>-->
-    <!--<script src="vendor/angular/angular-route.min.js"></script>-->
-
-
-    <!-- Widget -->
-    <!--<script src="views/widget/controllers/widget-list.controller.client.js"></script>-->
-    <!--<script src="services/widget.service.client.js"></script>-->
 </head>
 
 <body>
@@ -28,36 +20,37 @@
         <h5>Jeremy Stern</h5>
     </div>
 
-    <div class="container-fluid hangman-area"
-         ng-controller="HangmanController as model">
-        <script src="app.js"></script>
+    <div class="container-fluid hangman-area" ng-controller="HangmanController as model">
 
         <!--ng-keypress="model.getKeyPressed(keyCode)">-->
 
-        <h3 class="center">{{model.message}}</h3>
+        <h3 id="heading" class="center">{{model.message}}</h3>
 
         <!--Hangman ASCII-->
         <div class="horizontal-center">
-            <p>{{model.picture}}</p>
+            <p id="picture">{{model.picture}}</p>
         </div>
 
-        <h2 id="wordState" class="upon-start center">{{model.currentWordState}}</h2>
+        <h2 id="current-word-state" class="upon-start center">{{model.currentWordState}}</h2>
+
         <div class="center">
-            <input type="text" ng-model="textInput" ng-keypress="model.getKeyPressed()"/>
+            <!--<input type="text" ng-model="textInput"/>-->
+            <!--<input type="text" ng-model="textInput" ng-keypress="model.getKeyPressed()"/>-->
         </div>
 
 
-        <h4 class="upon-start center">{{model.prevGuesses}}</h4>
-        <h4 class="upon-start center">{{model.wrongGuesses}}</h4>
+        <h4 id="prev-guesses" class="upon-start center" ng-bind="model.prevGuesses">{{model.prevGuesses}}</h4>
+        <h4 id="wrong-guesses" class="upon-start center" ng-bind="model.wrongGuesses">{{model.wrongGuesses}}</h4>
 
 
         <!--New Game Button-->
-        <a class="btn btn-block btn-primary" ng-click="model.startNewGame(); textInput = ''">
+        <!--<a class="btn btn-block btn-primary" ng-click="model.startNewGame(); textInput = ''">-->
+        <a class="btn btn-block btn-primary" ng-click="model.startNewGame()">
             New Game
         </a>
 
-        <h5 class="center">Games won: {{model.gamesWon}}</h5>
-        <h5 class="center">Games lost: {{model.gamesLost}}</h5>
+        <h5 id="games-won" class="center">Games won: {{model.gamesWon}}</h5>
+        <h5 id="games-lost" class="center">Games lost: {{model.gamesLost}}</h5>
     </div>
 </body>
 </html>
