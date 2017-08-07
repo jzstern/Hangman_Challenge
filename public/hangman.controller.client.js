@@ -7,7 +7,9 @@
     var model = this;
 
     model.message = "Click New Game to begin";
-    model.wordArray = ['electric', 'window', 'interesting', 'fortunate', 'enticing', 'telephone', 'paradise', 'measure'];
+    model.wordArray =
+      ['enterprise', 'platform', 'interesting', 'telephone', 'paradise', 'measurement', 'interface',
+      'unbelievable', 'extraordinary', 'difficult', 'resources', 'marketing', 'influence', 'controller'];
     model.prevGuesses = "";
     model.wrongGuesses = 0;
     model.gamesWon = 0;
@@ -21,8 +23,8 @@
     model.initBlanks = initBlanks;
     model.updateWord = updateWord;
     model.startNewGame = startNewGame;
-    model.getKeyPressed = getKeyPressed;
     model.renderHangman = renderHangman;
+    model.renderText = renderText;
     model.gameWon = gameWon;
     model.gameLost = gameLost;
     model.gameIsOver = gameIsOver;
@@ -46,7 +48,7 @@
           if (model.guess != "") {
             model.prevGuesses += model.guess + ', ';
           }
-          console.log(model.prevGuesses);
+          // console.log(model.prevGuesses);
 
           // if the guessed letter is in the word
           if (model.theWord.indexOf(model.guess) > -1) {
@@ -61,7 +63,7 @@
             }
 
             model.currentWordState = s;
-            console.log("currentWordState: " + model.currentWordState);
+            // console.log("currentWordState: " + model.currentWordState);
 
             // check for game won
             if (gameIsOver()) {
@@ -81,13 +83,7 @@
       }
 
       // update w/ jquery
-      $('#heading').html(model.message);
-      $('#picture').html(model.picture);
-      $('#current-word-state').html(model.currentWordState);
-      $('#prev-guesses').html(model.prevGuesses);
-      $('#wrong-guesses').html(model.wrongGuesses);
-      $('#games-won').html("Games won: " + model.gamesWon);
-      $('#games-lost').html("Games lost: " + model.gamesLost);
+      renderText();
     }
 
     function renderHangman() {
@@ -223,13 +219,7 @@
       initBlanks();
       model.message = "New Game Started (" + model.theWord + ")";
 
-      $('#heading').html(model.message);
-      $('#picture').html(model.picture);
-      $('#current-word-state').html(model.currentWordState);
-      $('#prev-guesses').html(model.prevGuesses);
-      $('#wrong-guesses').html(model.wrongGuesses);
-      $('#games-won').html("Games won: " + model.gamesWon);
-      $('#games-lost').html("Games lost: " + model.gamesLost);
+      renderText();
     }
 
     function gameWon() {
@@ -246,70 +236,19 @@
       return (model.wrongGuesses == 10 || model.currentWordState.indexOf("_") < 0) ? true : false;
     }
 
-    function getKeyPressed() {
-      var key = event.keyCode;
-      // console.log("Keycode: " + key);
-
-      if (key == 97) {
-        model.guess = "a";
-      } else if (key == 98) {
-        model.guess = "b";
-      } else if (key == 99) {
-        model.guess = "c";
-      } else if (key == 100) {
-        model.guess = "d";
-      } else if (key == 101) {
-        model.guess = "e";
-      } else if (key == 102) {
-        model.guess = "f";
-      } else if (key == 103) {
-        model.guess = "g";
-      } else if (key == 104) {
-        model.guess = "h";
-      } else if (key == 105) {
-        model.guess = "i";
-      } else if (key == 106) {
-        model.guess = "j";
-      } else if (key == 107) {
-        model.guess = "k";
-      } else if (key == 108) {
-        model.guess = "l";
-      } else if (key == 109) {
-        model.guess = "m";
-      } else if (key == 110) {
-        model.guess = "n";
-      } else if (key == 111) {
-        model.guess = "o";
-      } else if (key == 112) {
-        model.guess = "p";
-      } else if (key == 113) {
-        model.guess = "q";
-      } else if (key == 114) {
-        model.guess = "r";
-      } else if (key == 115) {
-        model.guess = "s";
-      } else if (key == 116) {
-        model.guess = "t";
-      } else if (key == 117) {
-        model.guess = "u";
-      } else if (key == 118) {
-        model.guess = "v";
-      } else if (key == 119) {
-        model.guess = "w";
-      } else if (key == 120) {
-        model.guess = "x";
-      } else if (key == 121) {
-        model.guess = "y";
-      } else if (key == 122) {
-        model.guess = "z";
-      }
-
-      updateWord();
+    function renderText() {
+      $('#heading').html(model.message);
+      $('#picture').html(model.picture);
+      $('#current-word-state').html(model.currentWordState);
+      $('#prev-guesses').html(model.prevGuesses);
+      $('#wrong-guesses').html(model.wrongGuesses);
+      $('#games-won').html("Games won: " + model.gamesWon);
+      $('#games-lost').html("Games lost: " + model.gamesLost);
     }
 
     document.onkeydown = function getLetter(evt) {
       var code = evt.keyCode;
-      console.log("keycode: " + code);
+      // console.log("keycode: " + code);
 
       if (code == 65) {
         model.guess = "a";
@@ -365,8 +304,7 @@
         model.guess = "z";
       }
 
-      // console.log("Key is: " + model.guess);
-      console.log("model.guess is: " + model.guess);
+      // console.log("model.guess is: " + model.guess);
       updateWord();
     }
   }
