@@ -25,6 +25,10 @@ body {
   width: auto;
 }
 
+.btn-primary {
+    max-width: 800px;
+}
+
 p {
     white-space: pre-wrap;
 }
