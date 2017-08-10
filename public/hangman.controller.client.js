@@ -6,244 +6,30 @@
   function HangmanController($http) {
     var model = this;
 
-    // TODO ; move data & functions from client side (except for information displayed on the screen) to server
     model.message = "Click New Game to begin";
-    model.wordArray =
-      ['enterprise', 'platform', 'interesting', 'telephone', 'paradise', 'measurement', 'interface',
-      'unbelievable', 'extraordinary', 'difficult', 'resources', 'marketing', 'influence', 'controller'];
     model.prevGuesses = "";
-    model.wrongGuesses = 0;
     model.gamesWon = 0;
     model.gamesLost = 0;
     model.currentWordState = "";
-    model.theWord = "";
     model.picture = "";
-    model.guess = "";
 
-    model.pickWord = pickWord;
-    model.initBlanks = initBlanks;
-    model.updateWord = updateWord;
     model.startNewGame = startNewGame;
-    model.renderHangman = renderHangman;
     model.renderText = renderText;
-    model.gameWon = gameWon;
-    model.gameLost = gameLost;
-    model.gameIsOver = gameIsOver;
-
-    function pickWord() {
-      var wordIndex = Math.floor(Math.random() * model.wordArray.length);
-      model.theWord = model.wordArray[wordIndex];
-    }
-
-    function initBlanks() {
-      model.currentWordState = "";
-      for (var i = 0; i < model.theWord.length; i++) {
-        model.currentWordState += "_ ";
-      }
-    }
-
-    function updateWord() {
-      if (!gameIsOver()) {
-        // if the letter hasn't been guessed yet...
-        if (model.prevGuesses.indexOf(model.guess) == -1 || (model.prevGuesses.length == 0)) {
-          if (model.guess != "") {
-            model.prevGuesses += model.guess + ', ';
-          }
-          // console.log(model.prevGuesses);
-
-          // if the guessed letter is in the word
-          if (model.theWord.indexOf(model.guess) > -1) {
-            var s = model.currentWordState;
-
-            // update the currentWordState filling in the letter where appropriate
-            for (var i = 0; i < model.theWord.length; i++) {
-              var c = model.theWord.charAt(i);
-
-              if (c == model.guess) {
-                s = s.substring(0, i * 2) + c + model.currentWordState.substring(i * 2 + 1);
-              }
-            }
-
-            model.currentWordState = s;
-            // console.log("currentWordState: " + model.currentWordState);
-
-            // check for game won
-            if (gameIsOver()) {
-              gameWon();
-            }
-          } else {
-            // letter is not in the word and hasn't been guessed until now
-            model.wrongGuesses += 1;
-            renderHangman();
-
-            // check for game lost
-            if (gameIsOver()) {
-              gameLost();
-            }
-          }
-        }
-      }
-
-      // update browser w/ jquery
-      renderText();
-    }
-
-    function renderHangman() {
-      if (model.wrongGuesses == 0) {
-        model.picture =
-          "\n" +
-          "\n" +
-          "\n" +
-          "\n" +
-          "\n" +
-          "\n" +
-          "\n" +
-          "\n" +
-          ""
-      } else if (model.wrongGuesses == 1) {
-        model.picture =
-          "\n" +
-          "\n" +
-          "\n" +
-          "\n" +
-          "\n" +
-          "\n" +
-          "\n" +
-          "\n" +
-          "________"
-      } else if (model.wrongGuesses == 2) {
-        model.picture =
-          "\n" +
-          "|\n" +
-          "|\n" +
-          "|\n" +
-          "|\n" +
-          "|\n" +
-          "|\n" +
-          "|" +
-          "_________"
-      } else if (model.wrongGuesses == 3) {
-        model.picture =
-          "______\n" +
-          "|/        |\n" +
-          "|\n" +
-          "|\n" +
-          "|\n" +
-          "|\n" +
-          "|\n" +
-          "|" +
-          "______"
-      } else if (model.wrongGuesses == 4) {
-        model.picture =
-          "______\n" +
-          "|/        |\n" +
-          "|        (_)\n" +
-          "|\n" +
-          "|\n" +
-          "|\n" +
-          "|\n" +
-          "|" +
-          "_________"
-      } else if (model.wrongGuesses == 5) {
-        model.picture =
-          "______\n" +
-          "|/        |\n" +
-          "|        (_)\n" +
-          "|         |\n" +
-          "|         |\n" +
-          "|\n" +
-          "|\n" +
-          "|" +
-          "_________"
-      } else if (model.wrongGuesses == 6) {
-        model.picture =
-          "______\n" +
-          "|/        |\n" +
-          "|        (_)\n" +
-          "|         |\n" +
-          "|         |\n" +
-          "|        /\n" +
-          "|\n" +
-          "|" +
-          "_________"
-      } else if (model.wrongGuesses == 7) {
-        model.picture =
-          "______\n" +
-          "|/        |\n" +
-          "|        (_)\n" +
-          "|         |\n" +
-          "|         |\n" +
-          "|        /\\ \n" +
-          "|\n" +
-          "|" +
-          "_________"
-      } else if (model.wrongGuesses == 8) {
-        model.picture =
-          "______\n" +
-          "|/        |\n" +
-          "|        (_)\n" +
-          "|         |/\n" +
-          "|         |\n" +
-          "|        /\\ \n" +
-          "|\n" +
-          "|" +
-          "_________"
-      } else if (model.wrongGuesses == 9) {
-        model.picture =
-          "______\n" +
-          "|/        |\n" +
-          "|        (_)\n" +
-          "|        \\|/\n" +
-          "|         |\n" +
-          "|        /\\ \n" +
-          "|\n" +
-          "|" +
-          "_________"
-      } else if (model.wrongGuesses == 10) {
-        model.picture =
-          "______\n" +
-          "|/        |\n" +
-          "|       (xx)\n" +
-          "|        \\|/\n" +
-          "|         |\n" +
-          "|        /\\ \n" +
-          "|\n" +
-          "|" +
-          "_________"
-      }
-    }
 
     function startNewGame() {
       model.prevGuesses = "";
       model.wrongGuesses = 0;
-      renderHangman();
-      pickWord();
-      initBlanks();
-      model.message = "New Game Started";
+
+      return $http
+      .get('/newGame')
+      .then(function (response) {
+        // console.log(response.data);
+        model.message = response.data.message;
+        model.currentWordState = response.data.currentWordState;
+        model.picture = response.data.picture;
+      });
+
       renderText();
-
-
-      // TODO ; figure out why this isn't finding it (404)
-      // return $http
-      // .get('/newGame')
-      // .then(function (response) {
-      //   console.log(response.data);
-      //   // TODO ; refresh screen w/ new game data
-      // });
-    }
-
-    function gameWon() {
-      model.message = "Congratulations, you survived!";
-      model.gamesWon += 1;
-    }
-
-    function gameLost() {
-      model.message = "Ouch, you've been hanged!";
-      model.gamesLost += 1;
-    }
-
-    function gameIsOver() {
-      return (model.wrongGuesses == 10 || model.currentWordState.indexOf("_") < 0) ? true : false;
     }
 
     function renderText() {
@@ -258,73 +44,80 @@
 
     document.onkeydown = function getLetter(evt) {
       var code = evt.keyCode;
+      var letter = {};
       // console.log("keycode: " + code);
 
       if (code == 65) {
-        model.guess = "a";
+        letter.key = "a";
       } else if (code == 66) {
-        model.guess = "b";
+        letter.key = "b";
       } else if (code == 67) {
-        model.guess = "c";
+        letter.key = "c";
       } else if (code == 68) {
-        model.guess = "d";
+        letter.key = "d";
       } else if (code == 69) {
-        model.guess = "e";
+        letter.key = "e";
       } else if (code == 70) {
-        model.guess = "f";
+        letter.key = "f";
       } else if (code == 71) {
-        model.guess = "g";
+        letter.key = "g";
       } else if (code == 72) {
-        model.guess = "h";
+        letter.key = "h";
       } else if (code == 73) {
-        model.guess = "i";
+        letter.key = "i";
       } else if (code == 74) {
-        model.guess = "j";
+        letter.key = "j";
       } else if (code == 75) {
-        model.guess = "k";
+        letter.key = "k";
       } else if (code == 76) {
-        model.guess = "l";
+        letter.key = "l";
       } else if (code == 77) {
-        model.guess = "m";
+        letter.key = "m";
       } else if (code == 78) {
-        model.guess = "n";
+        letter.key = "n";
       } else if (code == 79) {
-        model.guess = "o";
+        letter.key = "o";
       } else if (code == 80) {
-        model.guess = "p";
+        letter.key = "p";
       } else if (code == 81) {
-        model.guess = "q";
+        letter.key = "q";
       } else if (code == 82) {
-        model.guess = "r";
+        letter.key = "r";
       } else if (code == 83) {
-        model.guess = "s";
+        letter.key = "s";
       } else if (code == 84) {
-        model.guess = "t";
+        letter.key = "t";
       } else if (code == 85) {
-        model.guess = "u";
+        letter.key = "u";
       } else if (code == 86) {
-        model.guess = "v";
+        letter.key = "v";
       } else if (code == 87) {
-        model.guess = "w";
+        letter.key = "w";
       } else if (code == 88) {
-        model.guess = "x";
+        letter.key = "x";
       } else if (code == 89) {
-        model.guess = "y";
+        letter.key = "y";
       } else if (code == 90) {
-        model.guess = "z";
+        letter.key = "z";
+      } else {
+        letter.key = "";
       }
-      // console.log("model.guess is: " + model.guess);
+      // console.log("letter is: " + letter.key);
 
-      // TODO ; figure out why this is a 'bad request' (500)
-      // return $http
-      // .post('/checkLetter', model.guess)
-      // .then(function (response) {
-      //   return response.data;
-      //   console.log(response.data);
-      //   // TODO ; refresh screen w/ updated game data
-      // });
+      return $http
+      .post('/checkLetter', letter)
+      .then(function (response) {
+        // console.log(response.data);
 
-      updateWord();
+        model.message = response.data.message;
+        model.prevGuesses = response.data.prevGuesses;
+        model.gamesWon = response.data.gamesWon;
+        model.gamesLost = response.data.gamesLost;
+        model.currentWordState = response.data.currentWordState;
+        model.picture = response.data.picture;
+
+        return response.data;
+      });
     }
   }
 })();
